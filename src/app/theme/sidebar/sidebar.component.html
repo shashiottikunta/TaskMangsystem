@@ -1,0 +1,12 @@
+<div class="sidebar" [class.active]="isSidebarOpen">
+    <div class="user-info">
+      <p>{{ loggedInUserName }}</p>
+    </div>
+    <!-- <a class="close-btn" (click)="toggleSidebar()">&times;</a> -->
+    <a [routerLink]="['/dashboard']" type="submit">Dashboard</a>
+    <a  [routerLink]="['/employee-list']" type="submit" >Employees</a>
+    <a   [routerLink]="['/project-list']" type="submit">Projects</a>
+    <a    [routerLink]="['/task-list']" type="submit">Tasks</a>
+
+  </div>
+  
